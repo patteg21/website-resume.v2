@@ -94,17 +94,22 @@
 }
 
 .contact-info{
-    grid-column: 7;
+    grid-column: 6;
     grid-row: 1;
-    padding-right: 10px;
 }
 
 .contact-info > p{
-
     text-align: right;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0px;
     padding: 10px;
+}
+
+.contact-info > p > a{
+    color: black;
+}
+.contact-info > p > a:hover{
+    color: gray;
 }
 
 .home-title{
