@@ -90,6 +90,7 @@
     padding: 0px;
     color: black;
     display: grid;
+    grid-gap: 5px;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
     grid-template-rows: minmax(100px,150px);
 }
@@ -131,9 +132,9 @@
 .world-map{
     padding: 10px;
     margin: 0px;
-    width: 80%;
+    width: 90%;
     bottom: 0;
     position: absolute;
     /* bottom: -275px; */
-    transform: translate(10%, 50%); 
+    transform: translate(5%, 40%); 
 }
