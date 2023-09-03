@@ -64,6 +64,7 @@
 
 .ref-item:hover{
     color: gray;
+    cursor: pointer;
 }
 
 /* various page formatting */
@@ -110,6 +111,7 @@
 }
 .contact-info > p > a:hover{
     color: gray;
+    cursor: pointer;
 }
 
 .home-title{
