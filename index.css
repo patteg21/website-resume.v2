@@ -62,7 +62,12 @@
     padding: 0px;
 }
 
-.ref-item:hover{
+.ref-item >a{
+    color: white;
+    text-decoration: none;
+}
+
+.ref-item >a:hover{
     color: gray;
     cursor: pointer;
 }
@@ -72,8 +77,12 @@
 .tab-page{
     margin: 0px;
     padding: 0px;
+    display: none;
 }
 
+.active{
+    display: block;
+}
 
 /* home page landing */
 .home-page{
