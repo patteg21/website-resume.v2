@@ -221,6 +221,8 @@
 
 .work-page >div{
     padding: 10px;
+    margin: 0px 0px 0px 30px;
+    background-color: aqua;
 }
 
 .work-page > div >h1{
@@ -244,8 +246,6 @@
 }
 
 
-
-
 .endava{
     grid-column: 1;
     grid-row: 1/3;
@@ -263,11 +263,38 @@
     
 }
 
-.projects{
+.projects-container{
     grid-column: 1/3;
     grid-row: 3/5;  
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
 }
+
+.proj-button > button{
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+
+.proj-button > button:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.project{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.current{
+    display: block;
+}
+
+
+
+
 
 .proj-dec{
     grid-column: 3/4;

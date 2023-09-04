@@ -17,3 +17,9 @@ tabs.forEach(element => {
     })
 });
 
+
+
+const projects = document.querySelectorAll('.project')
+
+const leftButton = document.getElementById('#left-button')
+const rightButton = document.getElementById('#right-button')
