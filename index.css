@@ -222,7 +222,6 @@
 .work-page >div{
     padding: 10px;
     margin: 0px 0px 0px 30px;
-    background-color: aqua;
 }
 
 .work-page > div >h1{
@@ -235,15 +234,17 @@
     margin: 0px;
 }
 
-.ons{
-    font-size: 20px;
-}
-
 .work-page > div > p{
+    font-size: 13px;
     padding: 10px 0px 0px 10px;
     margin: 0px 0px 0px 0px;
     margin: 0px;
 }
+
+.ons{
+    font-size: 20px;
+}
+
 
 
 .endava{

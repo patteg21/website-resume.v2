@@ -21,5 +21,15 @@ tabs.forEach(element => {
 
 const projects = document.querySelectorAll('.project')
 
-const leftButton = document.getElementById('#left-button')
-const rightButton = document.getElementById('#right-button')
+const leftButton = document.getElementById('left-button')
+const rightButton = document.getElementById('right-button')
+
+leftButton.addEventListener('click', (event)=>{
+    event.preventDefault();
+    console.log("worked")
+})
+
+rightButton.addEventListener('click', (event)=>{
+    event.preventDefault();
+    console.log("worked")
+})
