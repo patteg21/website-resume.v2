@@ -20,16 +20,43 @@ tabs.forEach(element => {
 
 
 const projects = document.querySelectorAll('.project')
+let number = 0
 
 const leftButton = document.getElementById('left-button')
 const rightButton = document.getElementById('right-button')
 
 leftButton.addEventListener('click', (event)=>{
     event.preventDefault();
-    console.log("worked")
+    
+    projects.forEach(project=>{
+        project.classList.remove('current')
+    })
+
+    if(number === 0){
+        number = projects.length
+        projects[number].classList.add('current')
+    } else{
+        number -= 1
+        projects[number].classList.add('current')
+    }
+
+        projects[number].classList.add('current')
 })
 
 rightButton.addEventListener('click', (event)=>{
     event.preventDefault();
-    console.log("worked")
+    
+    projects.forEach(project=>{
+        project.classList.remove('current')
+    })
+
+    if(number === projects.length){
+        number = 0
+        projects[number].classList.add('current')
+    } else{
+        number += 1
+        projects[number].classList.add('current')
+    }
+
+        projects[number].classList.add('current')
 })
