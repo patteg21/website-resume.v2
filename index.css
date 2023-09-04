@@ -365,15 +365,9 @@
     grid-row: 3/5;
     align-self: center;
     text-align: center;
-
 }
 
 .time-dec > img{
-
+    transform: translate(5%,10%) rotate(5deg);
     height: 350px;
-}
-
-.rotate-img{
-    transform: rotate(90deg);
-    width: 350px;
 }
