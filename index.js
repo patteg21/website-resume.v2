@@ -33,7 +33,7 @@ leftButton.addEventListener('click', (event)=>{
     })
 
     if(number === 0){
-        number = projects.length
+        number = projects.length - 1
         projects[number].classList.add('current')
     } else{
         number -= 1
@@ -50,7 +50,7 @@ rightButton.addEventListener('click', (event)=>{
         project.classList.remove('current')
     })
 
-    if(number === projects.length){
+    if(number === projects.length - 1){
         number = 0
         projects[number].classList.add('current')
     } else{
