@@ -369,6 +369,8 @@
     height: 250px;
 }
 
+
+
 .timeline{
     grid-column: 1;
     grid-row: 1/5;
@@ -389,12 +391,17 @@
     height: 25px;
     width: 25px;
     margin: 10px;
-    background-color: black;
+    background-color: lightgray;
     border-radius: 100%;
+    transition: background-color .5s;
+}
+
+.active-stamp{
+    background-color: gray !important;
 }
 
 .time-stamp > div:hover{
-    background-color: grey;
+    background-color: gray;
 }
 
 .time-stamp > h1{
@@ -404,7 +411,7 @@
 .line{
     height: 5px;
     border-radius: 50px;
-    background-color: black;
+    background-color: lightgray;
     width: 85px;
     position: relative; 
     z-index: 1;
@@ -412,3 +419,10 @@
     transform: rotate(90deg) translate(0%,0%);
 }
 
+.story-panel{
+    display: none;
+}
+
+.current-story{
+    display: block;
+}

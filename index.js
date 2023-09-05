@@ -62,3 +62,9 @@ rightButton.addEventListener('click', (event)=>{
 
         projects[number].classList.add('current')
 })
+
+
+
+
+
+ 
