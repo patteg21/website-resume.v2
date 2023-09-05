@@ -372,25 +372,43 @@
 .timeline{
     grid-column: 1;
     grid-row: 1/5;
-    background-color: beige;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .time-stamp{
-    align-self: center;
+    display: flex; 
+    align-items: center; 
     margin: 20px;
 }
 
+
+
 .time-stamp > div{
-    background-color: aqua;
-    height: max-content;
-    width: 5px;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    background-color: black;
+    border-radius: 100%;
 }
 
-
+.time-stamp > div:hover{
+    background-color: grey;
+}
 
 .time-stamp > h1{
     font-size: 25px;
 }
+
+.line{
+    height: 5px;
+    border-radius: 50px;
+    background-color: black;
+    width: 85px;
+    position: relative; 
+    z-index: 1;
+    margin: 0px 0px 0px 0px;
+    transform: rotate(90deg) translate(0%,0%);
+}
+
