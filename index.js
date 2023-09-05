@@ -1,3 +1,7 @@
+// const React = require('react');
+// const ReactDOM = require('react-dom');
+
+
 const tabs = document.querySelectorAll('.ref-item a');
 const tabContent = document.querySelectorAll('.tab-page');
 
@@ -7,7 +11,6 @@ tabs.forEach(element => {
         
         const target = element.getAttribute('href').substring(1)
 
-        console.log(target)
         tabContent.forEach(content=>{
             content.classList.remove('active')
         })

@@ -355,10 +355,6 @@
     grid-row: 1/3;
 }
 
-.timeline{
-    grid-column: 1;
-    grid-row: 1/5;
-}
 
 .time-dec{
     padding: 25px;
@@ -371,4 +367,30 @@
 .time-dec > img{
     transform: translate(5%,10%) rotate(5deg);
     height: 250px;
+}
+
+.timeline{
+    grid-column: 1;
+    grid-row: 1/5;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time-stamp{
+    align-self: center;
+    margin: 20px;
+}
+
+.time-stamp > div{
+    background-color: aqua;
+    height: max-content;
+    width: 5px;
+}
+
+
+
+.time-stamp > h1{
+    font-size: 25px;
 }
