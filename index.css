@@ -396,8 +396,13 @@
     transition: background-color .5s;
 }
 
+.stamp{
+    background-color: lightgray;
+}
+
 .active-stamp{
     background-color: gray !important;
+    display: block;
 }
 
 .time-stamp > div:hover{

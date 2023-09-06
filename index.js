@@ -64,7 +64,22 @@ rightButton.addEventListener('click', (event)=>{
 })
 
 
+const timeStamps = document.querySelectorAll('.stamp')
+const storyPanels = document.querySelectorAll('.story-panel')
 
+timeStamps.forEach(function(stamp){
+    
+    stamp.addEventListener('click',function(stampChange){
+        timeStamps.forEach(function(each){
+            each.classList.remove('active-stamp')
+        })
+        stamp.classList.add('active-stamp')
 
+        storyPanels.forEach(function(story){
+            story.classList.remove('current-story')
+        })
 
- 
+        const date = document.getElementById(`${stamp.id}`)
+        date.classList.add('current-story')
+    })
+});
