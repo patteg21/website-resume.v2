@@ -155,7 +155,7 @@
     padding: 10px;
     grid-gap: 10px;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(6, 2fr);
     grid-auto-rows: minmax(100px, auto);
 }
 
@@ -186,19 +186,40 @@
 }
 
 .word-cloud{
+    color: black;
     display: flex;
     grid-column: 3/7;
     grid-row: 1/6;
-    margin: 0px;
+    background-color: transparent;
+    margin: 0px 40px 0px 0px;
 }
 
-.word-cloud >img{
+.word-cloud > p{
+    background-color: transparent;
+    padding: 2px;
+    margin: 2px;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.word-cloud > p:hover{
+    transform: scale(1.05);
+    /* transform: translate(10px,10px); */
+}
+
+.trail {
+    opacity: 0.5; /* Make the trail element semi-transparent */
+    transition: opacity 0.3s ease; /* Add a transition effect for opacity */
+}
+
+
+/* .word-cloud >img{
     transition: transform 0.5s ease-in-out;
 }
 
 .word-cloud >img:hover {
     transform: scale(1.05);
-}
+} */
 
 .cloud{
     display: flex;
